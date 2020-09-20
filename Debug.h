@@ -115,21 +115,6 @@ namespace Debugging {
 		static void LogError(const UActorComponent* const comp, const FString& str);
 #pragma endregion Printing messages to the Log by static methods
 
-#pragma region Static Log Benchmark
-		// Print message to the Benchmark log (static method).
-		static void LogBench(const FString& str);
-		// Print message to the Benchmark log with the name of the object attached (static method).
-		static void LogBench(const UObject* obj, const FString& str);
-		// Print message to the Benchmark log WARNING category (static method).
-		static void LogBenchWarning(const FString& str);
-		// Print message to the Benchmark log WARNING category with the name of the object attached (static method).
-		static void LogBenchWarning(const UObject* obj, const FString& str);
-		// Print message to the Benchmark log ERROR category (static method).
-		static void LogBenchError(const FString& str);
-		// Print message to the Benchmark log ERROR category with the name of the object attached (static method).
-		static void LogBenchError(const UObject* obj, const FString& str);
-#pragma endregion
-
 #pragma region Screen
 		// Print message to the viewport with the duration of 5 seconds till the message disappear.
 		static void Screen(const FString& str);

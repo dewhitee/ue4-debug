@@ -1,9 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "Debug/Debug.h"
 #include "Engine/Engine.h"
-#include "Benchmark/Timer.h"
 
 DEFINE_LOG_CATEGORY(LogDebug);
 
@@ -206,36 +204,6 @@ namespace Debugging {
 	void Debug::LogError(const UActorComponent* const comp, const FString& str)
 	{
 		UE_LOG(LogDebug, Error, TEXT("%s [Owner: %s]: %s"), comp ? *comp->GetName() : *FString("None"), comp ? *comp->GetOwner()->GetName() : *FString("None"), *str);
-	}
-
-	void Debug::LogBench(const FString& str)
-	{
-		UE_LOG(LogBenchmark, Display, TEXT("<NO_OBJECT_NAME>: %s"), *str);
-	}
-
-	void Debug::LogBench(const UObject* obj, const FString& str)
-	{
-		UE_LOG(LogBenchmark, Display, TEXT("%s: %s"), obj ? *obj->GetName() : *FString("None"), *str);
-	}
-
-	void Debug::LogBenchWarning(const FString& str)
-	{
-		UE_LOG(LogBenchmark, Warning, TEXT("%s"), *str);
-	}
-
-	void Debug::LogBenchWarning(const UObject* obj, const FString& str)
-	{
-		UE_LOG(LogBenchmark, Warning, TEXT("%s: %s"), obj ? *obj->GetName() : *FString("None"), *str);
-	}
-
-	void Debug::LogBenchError(const FString& str)
-	{
-		UE_LOG(LogBenchmark, Error, TEXT("%s"), *str);
-	}
-
-	void Debug::LogBenchError(const UObject* obj, const FString& str)
-	{
-		UE_LOG(LogBenchmark, Error, TEXT("%s: %s"), obj ? *obj->GetName() : *FString("None"), *str);
 	}
 
 	void Debug::Screen(const FString& str)
