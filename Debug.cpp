@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Debug/Debug.h"
+#include "Debug.h"
 #include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY(LogDebug);
