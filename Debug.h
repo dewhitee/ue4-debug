@@ -33,7 +33,7 @@ namespace Debugging {
 	/**
 	 *
 	 */
-	class THEXGAME_API Debug final
+	class Debug final
 	{
 	public:
 #pragma region Constructors
